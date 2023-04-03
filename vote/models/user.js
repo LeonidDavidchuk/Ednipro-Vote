@@ -1,5 +1,5 @@
-import { sequelize } from "../database/dbconnection.js";
 import { DataTypes } from "sequelize";
+import { sequelize } from "../database/dbconnection.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
