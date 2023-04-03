@@ -22,9 +22,6 @@ export const Picture = sequelize.define("Picture", {
   },
 });
 
-// User.hasMany(Picture);
-// Picture.belongsTo(User);
-
 Picture.sync()
   .then(() => {
     console.log("Table picture created successfully");
