@@ -1,13 +1,13 @@
 import Router from "express";
+import { isAdminMiddleware } from "../middleware/isAdminMiddleware.js";
+import { authenticateToken } from "../middleware/authenticateToken.js";
 import { getAllController } from "../controllers/userControllers/getAllController.js";
 import { getUserController } from "../controllers/userControllers/getUserController.js";
 import { registrationController } from "../controllers/userControllers/registrationController.js";
-import { authenticateToken } from "../middleware/authenticateToken.js";
 import { loginContoller } from "../controllers/userControllers/loginContoller.js";
 import { logintokenContoller } from "../controllers/userControllers/logintokenController.js";
 import { deleteController } from "../controllers/userControllers/deleteController.js";
 import { changeController } from "../controllers/userControllers/changeController.js";
-import { isAdminMiddleware } from "../middleware/isAdminMiddleware.js";
 
 const app = new Router();
 

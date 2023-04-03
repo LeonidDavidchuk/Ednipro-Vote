@@ -2,7 +2,6 @@ import { sequelize } from "../database/dbconnection.js";
 import { DataTypes } from "sequelize";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { Picture } from "./picture.js";
 
 export const User = sequelize.define("User", {
   id: {

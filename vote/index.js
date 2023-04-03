@@ -1,6 +1,6 @@
 import express from "express";
-import { authDB } from "./database/dbconnection.js";
 import router from "./routes/home.js";
+import { authDB } from "./database/dbconnection.js";
 
 const app = express();
 
