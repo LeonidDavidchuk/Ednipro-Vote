@@ -24,6 +24,7 @@ function Middle() {
                 flexDirection: "column",
                 alignItems: "center",
                 gap: "20px",
+                fontSize: "20px",
               }}
             >
               <p className="blue-circle3-text">

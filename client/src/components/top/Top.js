@@ -33,11 +33,12 @@ function Top() {
           </div>
         </div>
       </div>
-
       <div className="rigth">
         <div className="container-card-my-uchnivskiy">
-          <img className="ellipse" src={ellipse} alt="ellipse" />
-          <div className="blue-circle"></div>
+          <div style={{ marginLeft: "-180px", marginTop: "50px" }}>
+            <img className="ellipse" src={ellipse} alt="ellipse" />
+            <div className="blue-circle"></div>
+          </div>
           <img className="card" src={card} alt="card"></img>
         </div>
       </div>
