@@ -1,0 +1,85 @@
+.picture-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  padding-top: 170px;
+}
+
+.card {
+  position: relative;
+  width: 407px;
+  top: 0;
+  left: 0;
+  height: 259.09px;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.5s;
+}
+
+.card .front .cardimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card .back {
+  display: flex;
+  flex-direction: column;
+  transform: perspective(600px) rotateY(180deg);
+  background: #ededed;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg) scaleX(-1);
+}
+
+.heart {
+  width: 26px;
+  height: 24px;
+  display: flex;
+}
+
+.button-golos {
+  border-radius: 50px;
+  width: 274px;
+  height: 53px;
+  font-size: 24px;
+  background-color: #5fb5f3;
+  border: none;
+  cursor: pointer;
+}
+
+.buttondiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.buttondiv2 {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.text-back {
+  font-size: 20px;
+}

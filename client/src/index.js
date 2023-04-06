@@ -5,6 +5,7 @@ import Top from "./components/top/Top.js";
 import Middle from "./components/middle/Middle.js";
 import Header from "./components/header/Header.js";
 import Register from "./components/register/Register.js";
+import Picture from "./components/picture/Picture.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Top />
       <Middle />
       <Register />
+      <Picture />
     </div>
   </React.StrictMode>
 );
