@@ -1,9 +1,14 @@
+.wrapper {
+  position: relative;
+}
+
 .top_container {
   position: relative;
   padding: 0 20px;
   display: flex;
   justify-content: center;
   gap: 50%;
+  left: 200px;
 }
 
 .uchnisckiy_container {
@@ -51,8 +56,8 @@ p.tight2 {
 
 .ellipse {
   width: 300px;
-  margin-top: 100px;
-  margin-left: -635px;
+  margin-top: 70px;
+  margin-left: -800px;
   position: absolute;
   z-index: 1;
 }
@@ -63,14 +68,14 @@ p.tight2 {
   border-radius: 50%;
   background-color: #5fb5f3;
   position: absolute;
-  margin-top: -110px;
-  margin-left: -420px;
+  margin-top: -170px;
+  margin-left: -650px;
 }
 
-.card {
+.cards_fuck {
   position: absolute;
-  height: 500px;
+  height: 350px;
   z-index: 1;
-  left: 1000px;
-  top: 25px;
+  margin-left: -850px;
+  top: 0px;
 }

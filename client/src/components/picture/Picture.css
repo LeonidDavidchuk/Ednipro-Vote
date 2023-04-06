@@ -39,15 +39,16 @@
   padding: 15px;
   text-align: center;
   cursor: pointer;
-  pointer-events: auto;
+  pointer-events: none;
 }
+
 
 .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back {
-  transform: perspective(600px) rotateY(360deg) scaleX(-1);
+  transform: perspective(600px) rotateY(360deg);
 }
 
 .heart {
@@ -64,6 +65,7 @@
   background-color: #5fb5f3;
   border: none;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .buttondiv {
