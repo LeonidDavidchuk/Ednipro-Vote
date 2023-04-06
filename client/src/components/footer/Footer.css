@@ -1,0 +1,43 @@
+.footer {
+  padding-bottom: 90px;
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+}
+
+.ednipro_logo_text {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 100px;
+  gap: 50px;
+  text-align: center;
+}
+
+.logo_ednipro {
+  width: 61px;
+  height: 61px;
+}
+
+.prava {
+  font-size: 24px;
+  width: 220px;
+}
+
+.budte_z_nami {
+  font-size: 24px;
+  margin-top: 100px;
+  position: relative;
+  margin-left: 800px;
+}
+
+.social_link {
+  width: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

@@ -13,9 +13,9 @@ code {
     monospace;
 }
 
-.top {
+.container_main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 165px;
+  padding: 0 165px;
 }

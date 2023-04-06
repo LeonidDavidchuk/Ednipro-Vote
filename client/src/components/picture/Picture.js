@@ -79,6 +79,70 @@ function Picture() {
 
       <div className="card">
         <div className="face front">
+          <img className="cardimg" src={card2} alt="card1" />
+          <div className="face back">
+            <div className="buttondiv">
+              <div className="heart">
+                <img src={heart} alt="heart" />
+              </div>
+              <div className="buttondiv2">
+                <button className="button-golos">Проголосувати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="face front">
+          <img className="cardimg" src={card4} alt="card1" />
+          <div className="face back">
+            <div className="buttondiv">
+              <div className="heart">
+                <img src={heart} alt="heart" />
+              </div>
+              <div className="buttondiv2">
+                <button className="button-golos">Проголосувати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="face front">
+          <img className="cardimg" src={card3} alt="card1" />
+          <div className="face back">
+            <div className="buttondiv">
+              <div className="heart">
+                <img src={heart} alt="heart" />
+              </div>
+              <div className="buttondiv2">
+                <button className="button-golos">Проголосувати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="face front">
+          <img className="cardimg" src={card1} alt="card1" />
+          <div className="face back">
+            <div className="buttondiv">
+              <div className="heart">
+                <img src={heart} alt="heart" />
+              </div>
+              <div className="buttondiv2">
+                <button className="button-golos">Проголосувати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="face front">
           <img className="cardimg" src={card1} alt="card1" />
           <div className="face back">
             <div className="buttondiv">
