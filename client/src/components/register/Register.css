@@ -33,3 +33,35 @@
   position: relative;
   font-size: 24px;
 }
+
+.rectangle {
+  display: flex;
+  margin-left: -170px;
+  position: absolute;
+  z-index: -1;
+}
+
+.Button-and-form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.registration {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+}
+
+.registration button {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(60deg, #5fb5f3, #f7d984) border-box;
+  border: solid transparent;
+  border-radius: 50px;
+  font-size: 22px;
+  width: 560px;
+  height: 75px;
+  cursor: pointer;
+}
