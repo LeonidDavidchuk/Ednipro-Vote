@@ -3,3 +3,10 @@
   height: 120px;
   margin-left: 100px;
 }
+
+/* For 4K */
+@media (min-width: 2560px) {
+  .logo {
+    margin-left: 400px;
+  }
+}

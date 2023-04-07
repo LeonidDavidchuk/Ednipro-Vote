@@ -1,19 +1,16 @@
 import "../top/Top.css";
 import React from "react";
-import button from "./images/button.svg";
 import ellipse from "./images/ellipse.svg";
 import card from "./images/card.svg";
 
 function Top() {
   return (
-    <div className="wrapper">
-      <div className="top_container">
+    <div className="top_container">
+      <div className="left-right-wrapper">
         <div className="left">
-          <div className="uchnisckiy_container">
-            <img className="button" src={button} alt="Obodok dlya teksta" />
+          <div className="obodok">
             <p className="text_on_button">ТВІЙ УНІКАЛЬНИЙ УЧНІВСЬКИЙ</p>
           </div>
-
           <div className="top_text">
             <p>Привіт - це єДніпро, який створює ваші учнівські!</p>
             <p className="tight">
@@ -34,14 +31,11 @@ function Top() {
             </div>
           </div>
         </div>
-        <div className="rigth">
-          <div className="container-card-my-uchnivskiy">
-            <div style={{ marginLeft: "-180px", marginTop: "50px" }}>
-              <img className="ellipse" src={ellipse} alt="ellipse" />
-              <div className="blue-circle"></div>
-            </div>
-            <img className="cards_fuck" src={card} alt="card"></img>
-          </div>
+
+        <div className="right">
+          <img className="ellipse" src={ellipse} alt="ellipse" />
+          <div className="blue-circle"></div>
+          <img className="cards_fuck" src={card} alt="card" />
         </div>
       </div>
     </div>

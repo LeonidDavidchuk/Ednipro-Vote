@@ -7,21 +7,19 @@ import telegram from "./images/telegram.svg";
 
 function Footer() {
   return (
-    <div>
-      <div class="footer">
-        <div className="ednipro_logo_text">
-          <div>
-            <img src={ednipro_logo} alt="ednipro logo" />
-          </div>
-
-          <div className="prava">
-            <p>Всі права захищені</p>
-          </div>
+    <div class="footer">
+      <div className="ednipro_logo_text">
+        <div>
+          <img src={ednipro_logo} alt="ednipro logo" />
         </div>
 
-        <div className="budte_z_nami">
-          <p>Будьте з нами на одній хвилі в соціальних мережах: </p>
+        <div className="prava">
+          <p>Всі права захищені</p>
         </div>
+      </div>
+
+      <div className="budte_z_nami">
+        <p>Будьте з нами на одній хвилі в соціальних мережах: </p>
 
         <div className="social_link">
           <a href="https://t.me/kp_ednipro">

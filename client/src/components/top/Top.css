@@ -1,41 +1,53 @@
-.wrapper {
-  position: relative;
-}
-
 .top_container {
   position: relative;
-  padding: 0 20px;
   display: flex;
   justify-content: center;
-  gap: 50%;
-  left: 200px;
 }
 
-.uchnisckiy_container {
-  position: relative;
+.left-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 20px;
 }
 
-.button {
-  width: 680px;
-  height: 100px;
-  position: relative;
-  left: -80px;
-  margin-top: 100px;
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 800px;
+  justify-content: center;
+}
+
+.obodok {
+  align-items: center;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0)),
+    linear-gradient(101deg, #5fb5f3, #f7d984);
+  background-origin: border-box;
+  border: 2px solid transparent;
+  border-image-source: none;
+  border-radius: 50px;
+  box-shadow: inset 2px 1000px 1px #ffffff;
+  display: flex;
+  font-size: 1.5rem;
+  height: 3.4rem;
+  justify-content: center;
+  width: 700px;
+  height: 104px;
 }
 
 .text_on_button {
   text-align: center;
-  font-size: 35px;
-  position: absolute;
-  margin-top: -70px;
-  margin-left: -10px;
+  font-size: 40px;
 }
 
 .top_text {
-  font-size: 20px;
+  font-size: 23px;
   line-height: 1.5;
   position: relative;
-  margin-left: -65px;
 }
 
 .block_text1 {
@@ -54,28 +66,264 @@ p.tight2 {
   font-size: 18px;
 }
 
+.right {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ellipse {
   width: 300px;
-  margin-top: 70px;
-  margin-left: -800px;
-  position: absolute;
+  position: relative;
   z-index: 1;
+  right: 45%;
 }
 
 .blue-circle {
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  margin-left: -10%;
+  margin-top: -300px;
   background-color: #5fb5f3;
   position: absolute;
-  margin-top: -170px;
-  margin-left: -650px;
 }
 
 .cards_fuck {
   position: absolute;
   height: 350px;
+  margin-left: -20%;
+  margin-top: -200px;
   z-index: 1;
-  margin-left: -850px;
-  top: 0px;
+}
+
+/* Laptop L */
+@media (max-width: 1440px) {
+  .left-right-wrapper {
+    flex-direction: row;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-left: -145px;
+  }
+
+  .right {
+    margin-left: 9%;
+  }
+
+  .top_text {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .text_on_button {
+    font-size: 30px;
+  }
+
+  .obodok {
+    width: 500px;
+    height: 60px;
+  }
+
+  .smalltext {
+    font-size: 16px;
+  }
+
+  .blue-circle {
+    width: 220px;
+    height: 220px;
+    margin-top: -45%;
+    margin-left: -89%;
+  }
+
+  .ellipse {
+    width: 200px;
+    margin-left: -250px;
+  }
+
+  .cards_fuck {
+    height: 200px;
+    margin-left: -100%;
+    margin-top: -150px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .left-right-wrapper {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .top_text {
+    font-size: 20px;
+  }
+
+  .text_on_button {
+    font-size: 30px;
+  }
+
+  .smalltext {
+    font-size: 16px;
+  }
+
+  .blue-circle {
+    margin-top: -300px;
+    margin-left: -100px;
+  }
+
+  .ellipse {
+    margin-top: -100px;
+    margin-left: 300px;
+  }
+
+  .cards_fuck {
+    height: 200px;
+    margin-left: -30%;
+    margin-top: -200px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .left-right-wrapper {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .top_text {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .text_on_button {
+    font-size: 24px;
+  }
+
+  .smalltext {
+    font-size: 14px;
+  }
+
+  p.tight {
+    line-height: 0.8;
+  }
+
+  p.tight2 {
+    line-height: 1;
+  }
+  .blue-circle {
+    margin-top: -250px;
+    margin-left: -200px;
+  }
+
+  .ellipse {
+    margin-top: -150px;
+  }
+
+  .cards_fuck {
+    height: 200px;
+    margin-left: -55%;
+    margin-top: -200px;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+  .left-right-wrapper {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .top_text {
+    font-size: 16px;
+    width: 800px;
+  }
+
+  .obodok {
+    width: 600px;
+  }
+
+  .text_on_button {
+    font-size: 20px;
+  }
+
+  .smalltext {
+    font-size: 12px;
+  }
+
+  .blue-circle {
+    margin-top: -300px;
+    margin-left: 70px;
+  }
+
+  .ellipse {
+    margin-top: -150px;
+  }
+
+  .cards_fuck {
+    height: 200px;
+    margin-left: -20%;
+    margin-top: -200px;
+  }
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+  .left-right-wrapper {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .top_text {
+    font-size: 16px;
+    width: 800px;
+  }
+
+  .obodok {
+    width: 400px;
+  }
+
+  .text_on_button {
+    font-size: 20px;
+  }
+
+  .smalltext {
+    font-size: 12px;
+  }
+
+  .blue-circle {
+    margin-top: -300px;
+    margin-left: 70px;
+  }
+
+  .ellipse {
+    margin-top: -150px;
+  }
+
+  .cards_fuck {
+    height: 200px;
+    margin-left: -20%;
+    margin-top: -200px;
+  }
 }

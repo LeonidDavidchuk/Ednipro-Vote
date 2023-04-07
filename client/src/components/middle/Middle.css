@@ -13,8 +13,7 @@
   height: 413px;
   border-radius: 49px;
   border: black 2px solid;
-  margin-top: 200px;
-
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +75,7 @@
 }
 
 .container1 {
-  display: "flex";
+  display: flex;
   width: "100%";
   justify-content: "space-evenly";
 }
@@ -130,4 +129,91 @@
 .arrow {
   position: relative;
   margin-top: 20px;
+}
+
+.optimize_phone {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* Laptop L */
+@media (max-width: 1440px) {
+  .rounded-rectangle {
+    width: 100%;
+    height: 30%;
+    margin-left: -300px;
+  }
+
+  .container3 {
+    font-size: 15px;
+  }
+
+  .container2 {
+    font-size: 15px;
+  }
+
+  .etapi-konkursu-text {
+    font-size: 15px;
+  }
+
+  .blue-circle1-text {
+    font-size: 1px;
+  }
+
+  .blue-circle2-text {
+    font-size: 1px;
+  }
+
+  .blue-circle3 {
+    font-size: 1px;
+  }
+
+  .blue-circle3-text {
+    font-size: 20px;
+  }
+
+  .blue-circle1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .blue-circle3 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .optimize_phone {
+    font-size: 15px;
+  }
+
+  .arrow {
+    margin-left: -700px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .rounded-rectangle {
+    width: 85%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
 }

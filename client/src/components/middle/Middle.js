@@ -16,17 +16,7 @@ function Middle() {
               justifyContent: "space-evenly",
             }}
           >
-            <div
-              style={{
-                width: "350px",
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "20px",
-                fontSize: "20px",
-              }}
-            >
+            <div className="optimize_phone">
               <p className="blue-circle3-text">
                 <span className="blue-circle-span"> 1</span>
                 <div className="blue-circle1"></div>
