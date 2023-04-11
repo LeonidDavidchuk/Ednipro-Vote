@@ -17,10 +17,10 @@ function Middle() {
             }}
           >
             <div className="optimize_phone">
-              <p className="blue-circle3-text">
+              <div className="blue-circle3-text">
                 <span className="blue-circle-span"> 1</span>
                 <div className="blue-circle1"></div>
-              </p>
+              </div>
               <div style={{ textAlign: "center" }}>
                 Школа проводить внутрішній конкурс за найкращий ескіз та передає
                 1 варіант на загальне відбіркове голосування
@@ -30,20 +30,20 @@ function Middle() {
               </span>
             </div>
             <div className="container2">
-              <p className="blue-circle3-text">
+              <div className="blue-circle3-text">
                 <span className="blue-circle-span">2</span>
                 <div className="blue-circle3"></div>
-              </p>
+              </div>
               <div>Період голосування</div>
               <span>
                 <strong>3 дні</strong>
               </span>
             </div>
             <div className="container3">
-              <p className="blue-circle3-text">
+              <div className="blue-circle3-text">
                 <span className="blue-circle-span"> 3</span>
                 <div className="blue-circle3"></div>
-              </p>
+              </div>
               <div>Вибір переможця та передача подарунку</div>
               <span>
                 <strong>1 день</strong>

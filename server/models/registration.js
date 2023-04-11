@@ -7,16 +7,11 @@ const app = new express();
 app.use(express.json());
 
 export const registrationModel = async (data, res) => {
-  const { name, secondName, surname, login, password, isAdmin } = data;
+  const { name, email, isAdmin } = data;
   try {
-    const hashedPassword = hashPassword(password);
-
     const user = await User.create({
       name,
-      secondName,
-      surname,
-      login,
-      password: hashedPassword,
+      email,
       isAdmin,
     });
 
@@ -28,9 +23,9 @@ export const registrationModel = async (data, res) => {
 
     user.dataValues.token = token;
 
-    res.status(201).json({ message: "User Created", user });
+    res.status(201).json({ message: "Пользователь создан", user });
   } catch (error) {
     console.log(error);
-    res.status(400).json({ message: "Error user created", error });
+    res.status(400).json({ message: "Ошибка создания пользователя", error });
   }
 };

@@ -13,22 +13,13 @@ export const User = sequelize.define("User", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  secondName: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  surname: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  login: {
+  email: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
-  },
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false,
+    validate: {
+      isEmail: true,
+    },
   },
   isAdmin: {
     type: DataTypes.BOOLEAN,

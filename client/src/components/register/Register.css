@@ -45,7 +45,17 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 50px;
+}
+
+.form_email {
+  position: relative;
+  font-size: 22px;
+  border-radius: 50px;
+  border-color: black;
+  width: 300px;
+  height: 75px;
+  text-indent: 50px;
 }
 
 .form_registration {
@@ -53,7 +63,7 @@
   font-size: 22px;
   border-radius: 50px;
   border-color: black;
-  width: 560px;
+  width: 300px;
   height: 75px;
   text-indent: 50px;
 }
@@ -71,7 +81,7 @@
   border: solid transparent;
   border-radius: 50px;
   font-size: 22px;
-  width: 560px;
+  width: 300px;
   height: 75px;
   cursor: pointer;
 }

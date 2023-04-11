@@ -7,7 +7,7 @@ import telegram from "./images/telegram.svg";
 
 function Footer() {
   return (
-    <div class="footer">
+    <div className="footer">
       <div className="ednipro_logo_text">
         <img className="logo_ednipro" src={ednipro_logo} alt="ednipro logo" />
 
