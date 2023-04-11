@@ -17,5 +17,31 @@ code {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 100px;
+  padding: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 }

@@ -1,6 +1,6 @@
 .register-container {
-  position: relative;
   width: 100%;
+  position: relative;
   height: auto;
   display: flex;
   justify-content: center;
@@ -48,6 +48,16 @@
   gap: 40px;
 }
 
+.form_registration {
+  position: relative;
+  font-size: 22px;
+  border-radius: 50px;
+  border-color: black;
+  width: 560px;
+  height: 75px;
+  text-indent: 50px;
+}
+
 .registration {
   position: relative;
   display: flex;
@@ -64,4 +74,237 @@
   width: 560px;
   height: 75px;
   cursor: pointer;
+}
+
+/* Laptop L */
+@media (max-width: 1440px) {
+  .register-container {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container {
+    margin-left: 0%;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .text2 {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .text3 {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .rectangle {
+    display: flex;
+    margin-left: -70px;
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+  }
+
+  .Button-and-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .registration {
+    width: 350px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+
+  .form_registration {
+    width: 350px;
+    height: 70px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .text-container {
+    width: 100%;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .text2 {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .text3 {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .rectangle {
+    display: flex;
+    margin-left: -70px;
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+  }
+
+  .Button-and-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .registration {
+    width: 350px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+
+  .form_registration {
+    width: 350px;
+    height: 70px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .text-container {
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .text1 {
+    font-size: 16px;
+  }
+
+  .text2 {
+    position: relative;
+    font-size: 13px;
+  }
+
+  .text3 {
+    position: relative;
+    font-size: 13px;
+  }
+
+  .rectangle {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+  }
+
+  .Button-and-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .registration {
+    width: 240px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+
+  .form_registration {
+    width: 240px;
+    height: 70px;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .text-container {
+    width: 420px;
+    margin-top: 300px;
+  }
+
+  .text1 {
+    font-size: 11px;
+    margin-left: 120px;
+  }
+
+  .text2 {
+    position: relative;
+    font-size: 9px;
+  }
+
+  .text3 {
+    position: relative;
+    font-size: 9px;
+  }
+
+  .rectangle {
+    display: flex;
+    margin-left: -70px;
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+  }
+
+  .Button-and-form {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .registration button {
+    width: 83px;
+    height: 25px;
+    font-size: 9px;
+  }
+
+  .form_registration {
+    width: 70px;
+    height: 20px;
+    font-size: 9px;
+    text-indent: 10px;
+  }
+
+  .arrow2 {
+    display: none;
+  }
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+  .text-container {
+    margin-left: 0;
+    width: 375px;
+  }
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+  .text-container {
+    margin-left: 280%;
+  }
 }

@@ -10,3 +10,16 @@
     margin-left: 400px;
   }
 }
+
+@media (max-width: 500px) {
+  .header-container {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    height: 75px;
+  }
+}

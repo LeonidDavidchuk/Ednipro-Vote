@@ -9,9 +9,7 @@ function Footer() {
   return (
     <div class="footer">
       <div className="ednipro_logo_text">
-        <div>
-          <img src={ednipro_logo} alt="ednipro logo" />
-        </div>
+        <img className="logo_ednipro" src={ednipro_logo} alt="ednipro logo" />
 
         <div className="prava">
           <p>Всі права захищені</p>
@@ -23,13 +21,13 @@ function Footer() {
 
         <div className="social_link">
           <a href="https://t.me/kp_ednipro">
-            <img src={telegram} alt="telegram" />
+            <img className="telegram" src={telegram} alt="telegram" />
           </a>
           <a href="https://www.facebook.com/kpednipro">
-            <img src={facebook} alt="facebook" />
+            <img className="facebook" src={facebook} alt="facebook" />
           </a>
           <a href="https://www.instagram.com/ednipro/">
-            <img src={instagram} alt="instagram" />
+            <img className="instagram" src={instagram} alt="instagram" />
           </a>
         </div>
       </div>

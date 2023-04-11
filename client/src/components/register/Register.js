@@ -20,23 +20,14 @@ function Register() {
           Щоб проголосувати: зареєструйтеся та оберіть найгарніший, на вашу
           думку, дизайн.
         </span>
+        <img className="arrow2" src={arrow2} alt="arrow2" />
 
-        <img src={arrow2} alt="arrow2" />
         <div className="Button-and-form">
           <Form.Group>
             <Form.Control
+              className="form_registration"
               type="text"
               placeholder="ПІБ"
-              className="Form.Control"
-              style={{
-                position: "relative",
-                fontSize: "22px",
-                borderRadius: "50px",
-                borderColor: "black",
-                width: "560px",
-                height: "75px",
-                textIndent: "50px",
-              }}
             />
           </Form.Group>
 

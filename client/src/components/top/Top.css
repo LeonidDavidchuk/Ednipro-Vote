@@ -104,21 +104,22 @@ p.tight2 {
 @media (max-width: 1440px) {
   .left-right-wrapper {
     flex-direction: row;
+    margin-left: 100px;
   }
 
   .left,
   .right {
     width: 100%;
-    margin-left: -145px;
+    margin-left: 120px;
   }
 
   .right {
-    margin-left: 9%;
+    margin-left: -38%;
+    width: 45%;
   }
 
   .top_text {
     font-size: 16px;
-    margin-left: 30px;
   }
 
   .text_on_button {
@@ -137,19 +138,19 @@ p.tight2 {
   .blue-circle {
     width: 220px;
     height: 220px;
-    margin-top: -45%;
-    margin-left: -89%;
+    margin-top: -170px;
+    margin-left: -130px;
   }
 
   .ellipse {
     width: 200px;
-    margin-left: -250px;
+    margin-left: -60px;
   }
 
   .cards_fuck {
+    margin-top: -100px;
     height: 200px;
-    margin-left: -100%;
-    margin-top: -150px;
+    margin-left: -220px;
   }
 }
 
@@ -157,11 +158,28 @@ p.tight2 {
 @media (max-width: 1024px) {
   .left-right-wrapper {
     flex-direction: column;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 20px;
   }
 
-  .left,
   .right {
     width: 100%;
+    margin-left: 0;
+  }
+
+  .left {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
   }
 
   .top_text {
@@ -169,7 +187,13 @@ p.tight2 {
   }
 
   .text_on_button {
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .obodok {
+    width: 100%;
+    height: 60px;
   }
 
   .smalltext {
@@ -177,19 +201,22 @@ p.tight2 {
   }
 
   .blue-circle {
-    margin-top: -300px;
-    margin-left: -100px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
   }
 
   .ellipse {
-    margin-top: -100px;
-    margin-left: 300px;
+    right: 26%;
+    width: 250px;
+    left: -21%;
   }
 
   .cards_fuck {
-    height: 200px;
-    margin-left: -30%;
-    margin-top: -200px;
+    height: 250px;
+    left: 44%;
+    top: 43%;
   }
 }
 
@@ -201,12 +228,16 @@ p.tight2 {
 
   .left,
   .right {
-    width: 100%;
+    width: 80%;
+  }
+
+  .left {
+    margin-left: -130px;
   }
 
   .top_text {
     font-size: 18px;
-    width: 100%;
+    width: 95%;
   }
 
   .text_on_button {
@@ -231,6 +262,7 @@ p.tight2 {
 
   .ellipse {
     margin-top: -150px;
+    margin-left: -360px;
   }
 
   .cards_fuck {
@@ -241,9 +273,11 @@ p.tight2 {
 }
 
 /* Mobile L */
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .left-right-wrapper {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
   .left,
@@ -251,13 +285,73 @@ p.tight2 {
     width: 100%;
   }
 
+  .left {
+    margin-left: 0;
+  }
+
   .top_text {
-    font-size: 16px;
-    width: 800px;
+    font-size: 11px;
   }
 
   .obodok {
-    width: 600px;
+    width: 300px;
+  }
+
+  .text_on_button {
+    font-size: 15px;
+  }
+
+  .smalltext {
+    font-size: 9px;
+  }
+
+  .blue-circle {
+    margin-top: -200px;
+    margin-left: -50px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .ellipse {
+    width: 150px;
+    margin-top: -150px;
+    left: 100px;
+  }
+
+  .cards_fuck {
+    height: 160px;
+    margin-left: -20%;
+    margin-top: -170px;
+  }
+
+  .right {
+    margin: 0;
+    height: 375px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .left-right-wrapper {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    margin-left: -200px;
+  }
+
+  .top_text {
+    margin-left: 18px;
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .obodok {
+    width: 80%;
   }
 
   .text_on_button {
@@ -269,17 +363,19 @@ p.tight2 {
   }
 
   .blue-circle {
-    margin-top: -300px;
+    margin-top: -200px;
     margin-left: 70px;
   }
 
   .ellipse {
-    margin-top: -150px;
+    margin-top: -30%;
+    margin-left: -30px;
+    width: 200px;
   }
 
   .cards_fuck {
     height: 200px;
-    margin-left: -20%;
+    margin-left: -10%;
     margin-top: -200px;
   }
 }
@@ -296,12 +392,13 @@ p.tight2 {
   }
 
   .top_text {
+    margin-left: 18px;
     font-size: 16px;
-    width: 800px;
+    width: 370px;
   }
 
   .obodok {
-    width: 400px;
+    width: 370px;
   }
 
   .text_on_button {
@@ -310,6 +407,10 @@ p.tight2 {
 
   .smalltext {
     font-size: 12px;
+  }
+
+  .right {
+    margin-left: -30%;
   }
 
   .blue-circle {
