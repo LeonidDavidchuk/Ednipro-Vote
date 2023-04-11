@@ -8,10 +8,16 @@ export const votePictureController = async (req, res) => {
   try {
     const picture = await Picture.findOne({ where: { id: pictureId } });
     if (!picture) {
-      return res.status(404).json({ message: "Picture not found" });
+      return res.status(404).json({ message: "Картинка не найдена" });
     }
 
     const user = await User.findOne({ where: { id: userId } });
+
+    if (user.votedPicture === picture.id) {
+      return res.status(400).json({
+        message: "Вы можете проголосовать за картинку только один раз",
+      });
+    }
 
     if (user.votedPicture && user.votedPicture !== picture.id) {
       const previousPicture = await Picture.findOne({
@@ -31,6 +37,8 @@ export const votePictureController = async (req, res) => {
     return res.status(200).json(picture);
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ message: "Error voting for picture" });
+    return res
+      .status(500)
+      .json({ message: "Ошибка при голосовании за картинку" });
   }
 };

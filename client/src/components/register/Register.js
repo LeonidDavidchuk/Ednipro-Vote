@@ -41,14 +41,13 @@ function Register() {
         // message success
         toast.success("Ви успішно зареєструвалися");
       } else {
-        console.error("Error register user: ", data.error.errors[0].message);
+        // messages error
 
-        toast.error(`Ошибка регистрации: ${data.error.errors[0].message}`);
+        console.error("Error register user: ");
+        toast.error(`Помилка реєстрації`);
       }
     } catch (error) {
       console.error("Error sending request: ", error);
-
-      toast.error(`Ошибка отправки запроса: ${error.message}`);
     }
   };
 
