@@ -2,8 +2,6 @@ import { Picture } from "../../models/picture.js";
 import { User } from "../../models/user.js";
 
 export const votePictureController = async (req, res) => {
-  console.log("FASDFASDFAS");
-
   const pictureId = req.body.id;
   const userId = req.user.id;
 
@@ -14,6 +12,9 @@ export const votePictureController = async (req, res) => {
     }
 
     const user = await User.findOne({ where: { id: userId } });
+    
+    const index = user.votedPicture;
+
 
     if (user.votedPicture === picture.id) {
       return res.status(400).json({
@@ -25,6 +26,7 @@ export const votePictureController = async (req, res) => {
       const previousPicture = await Picture.findOne({
         where: { id: user.votedPicture },
       });
+
       await previousPicture.decrement("count_vote");
     }
 
@@ -36,7 +38,7 @@ export const votePictureController = async (req, res) => {
 
     await User.update({ votedPicture: pictureId }, { where: { id: userId } });
 
-    return res.status(200).json(picture);
+    return res.status(200).json({picture : picture, previousPicture: index});
   } catch (error) {
     console.error(error);
     return res

@@ -16,6 +16,7 @@ function Picture() {
       );
       const data = await response.json();
       setPictures(data);
+      console.log(data);
       setLoad(false);
     }
 
@@ -53,9 +54,27 @@ function Picture() {
       });
 
       if (responce.ok) {
+        // update votes
+
         const updatedPicture = await responce.json();
 
+        let index = pictures.findIndex(x => x.id === pictureId);
+        let tempPictures = [...pictures];
+        let tempPicture = { ...tempPictures[index] }
+        tempPicture.count_vote++;
+        tempPictures[index] = tempPicture;
+
+
+        let previousIndex = pictures.findIndex(x => x.id === updatedPicture.previousPicture)
+
+        let tempPreviousPicture = { ...tempPictures[previousIndex] }
+        tempPreviousPicture.count_vote--;
+        tempPictures[previousIndex] = tempPreviousPicture;
+
+
+
         updatePictureVotes(pictureId, updatedPicture.count_vote);
+        setPictures( tempPictures );
         toast.success("Ви успішно проголосували");
       }
       if (!responce.ok) {
