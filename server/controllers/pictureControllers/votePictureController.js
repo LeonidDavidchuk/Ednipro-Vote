@@ -2,7 +2,9 @@ import { Picture } from "../../models/picture.js";
 import { User } from "../../models/user.js";
 
 export const votePictureController = async (req, res) => {
-  const pictureId = req.headers.id;
+  console.log("FASDFASDFAS");
+
+  const pictureId = req.body.id;
   const userId = req.user.id;
 
   try {

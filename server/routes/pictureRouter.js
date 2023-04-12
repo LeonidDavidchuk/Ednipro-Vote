@@ -10,12 +10,7 @@ import { getOnePictureController } from "../controllers/pictureControllers/getOn
 export const pictureRouter = new Router();
 
 pictureRouter.post("/add_picture", authenticateToken, addPictureController);
-pictureRouter.get(
-  "/getAll_picture",
-  authenticateToken,
-  isAdminMiddleware,
-  getAllPictureController
-);
+pictureRouter.get("/getAll_picture", getAllPictureController);
 pictureRouter.get(
   "/getOne_picture/:id",
   authenticateToken,
@@ -28,4 +23,4 @@ pictureRouter.get(
   isAdminMiddleware,
   deletePictureController
 );
-pictureRouter.post("/vote", authenticateToken, votePictureController);
+pictureRouter.post("/vote",   authenticateToken, votePictureController);

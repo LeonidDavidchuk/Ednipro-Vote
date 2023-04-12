@@ -1,12 +1,13 @@
 import { Picture } from "../../models/picture.js";
 
 export const addPictureController = async (req, res) => {
-  const { name, url } = req.body;
+  const { name, url, school } = req.body;
 
   try {
     const picture = await Picture.create({
       name: name,
       url: req.body.url,
+      school: req.body.school,
       votes: 0,
     });
 

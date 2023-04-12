@@ -1,15 +1,12 @@
 import jwt from "jsonwebtoken";
 
 export const authenticateToken = (req, res, next) => {
-  const authHeader = req.headers["authorization"];
+  const authHeader = req.headers.authorization;
 
   if (authHeader == null) return res.sendStatus(401);
   const token = authHeader.split(" ")[1];
 
   if (token == null) return res.sendStatus(401);
-  console.log(token);
-
-  console.log(req.body);
 
   jwt.verify(
     token,

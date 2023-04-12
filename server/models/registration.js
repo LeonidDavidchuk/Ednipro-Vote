@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import express from "express";
-import { hashPassword } from "../helpers/hasher.js";
 import { User } from "./user.js";
+import { sendEmail } from "../helpers/mailer.js";
 
 const app = new express();
 app.use(express.json());
@@ -22,6 +22,12 @@ export const registrationModel = async (data, res) => {
     );
 
     user.dataValues.token = token;
+
+    await sendEmail(
+      email,
+      "ЄДніпро Голосування",
+      `${name}, вас вітає платформа для голосування за учнівський ЄДніпро! Ви успішно зареєструвалися на нашій платформі. Щоб проголосувати за дизайн учнівського, перейдіть на веб-сайт.`
+    );
 
     res.status(201).json({ message: "Пользователь создан", user });
   } catch (error) {

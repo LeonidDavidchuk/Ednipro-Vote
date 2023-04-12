@@ -12,6 +12,12 @@ export const User = sequelize.define("User", {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
+    validate: {
+      len: {
+        args: [2, 50],
+        msg: "Name mus be between 2 and 50 characters",
+      },
+    },
   },
   email: {
     type: DataTypes.STRING,
@@ -19,6 +25,10 @@ export const User = sequelize.define("User", {
     unique: true,
     validate: {
       isEmail: true,
+      len: {
+        args: [4, 80],
+        msg: "Email must be between 4 and 80 characters",
+      },
     },
   },
   isAdmin: {

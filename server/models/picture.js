@@ -16,6 +16,10 @@ export const Picture = sequelize.define("Picture", {
     allowNull: false,
     unique: true,
   },
+  school: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   count_vote: {
     type: DataTypes.INTEGER,
     defaultValue: 0,
