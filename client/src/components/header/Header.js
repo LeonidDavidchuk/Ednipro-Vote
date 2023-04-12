@@ -5,7 +5,9 @@ import logo from "./images/ednipro_logo.svg";
 function Header() {
   return (
     <div className="header-container">
-      <img className="logo" src={logo} alt="Ednipro logo" />
+      <a href="/">
+        <img className="logo" src={logo} alt="Ednipro logo" />
+      </a>
     </div>
   );
 }
