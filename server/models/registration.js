@@ -9,6 +9,11 @@ app.use(express.json());
 export const registrationModel = async (data, res) => {
   const { name, email, isAdmin } = data;
   try {
+    console.log(name.includes(" "));
+    if (name.includes("  ")) {
+      return res.status(400).json("Incorrect name");
+    }
+
     const user = await User.create({
       name,
       email,

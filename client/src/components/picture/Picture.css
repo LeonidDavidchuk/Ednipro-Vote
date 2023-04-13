@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.Toastify {
+  position: absolute;
+}
+
 .card {
   position: relative;
   width: 407px;
@@ -58,6 +62,10 @@
   width: 26px;
   height: 24px;
   display: flex;
+  gap: 10px;
+  font-size: 20px;
+  align-items: center;
+  color: #fe5e5e;
 }
 
 .button-golos {
@@ -107,13 +115,12 @@
   .picture-container {
     position: relative;
     width: 100%;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 75px;
+    gap: 70px;
     padding-top: 75px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
   }
 }

@@ -161,6 +161,7 @@ p.tight2 {
     margin-left: 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
     max-width: 1600px;
     width: 100%;
@@ -169,7 +170,9 @@ p.tight2 {
 
   .right {
     width: 100%;
-    margin-left: 0;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
   }
 
   .left {
@@ -224,15 +227,23 @@ p.tight2 {
 @media (max-width: 768px) {
   .left-right-wrapper {
     flex-direction: column;
-  }
-
-  .left,
-  .right {
-    width: 80%;
+    flex-direction: column-reverse;
+    margin-left: 50px;
   }
 
   .left {
-    margin-left: -130px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .obodok {
+    width: 500px;
+    display: flex;
+    align-items: center;
   }
 
   .top_text {
@@ -257,17 +268,16 @@ p.tight2 {
   }
   .blue-circle {
     margin-top: -250px;
-    margin-left: -200px;
+    margin-left: -100px;
   }
 
   .ellipse {
     margin-top: -150px;
-    margin-left: -360px;
+    margin-left: -110px;
   }
 
   .cards_fuck {
-    height: 200px;
-    margin-left: -55%;
+    height: 250px;
     margin-top: -200px;
   }
 }
@@ -333,7 +343,7 @@ p.tight2 {
 
 @media (max-width: 425px) {
   .left-right-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .left {
@@ -341,6 +351,7 @@ p.tight2 {
   }
 
   .right {
+    width: 100%;
     margin-left: -200px;
   }
 
@@ -363,20 +374,20 @@ p.tight2 {
   }
 
   .blue-circle {
-    margin-top: -200px;
+    margin-top: -190px;
     margin-left: 70px;
   }
 
   .ellipse {
     margin-top: -30%;
-    margin-left: -30px;
-    width: 200px;
+    margin-left: -110px;
+    width: 140px;
   }
 
   .cards_fuck {
-    height: 200px;
-    margin-left: -10%;
-    margin-top: -200px;
+    height: 140px;
+    margin-left: 40px;
+    margin-top: -120px;
   }
 }
 

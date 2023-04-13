@@ -181,8 +181,13 @@
     gap: 60px;
   }
 
+  .form_email {
+    width: 200px;
+    height: 70px;
+  }
+
   .registration {
-    width: 350px;
+    width: 200px;
     height: 70px;
     position: relative;
     display: flex;
@@ -191,7 +196,7 @@
   }
 
   .form_registration {
-    width: 350px;
+    width: 200px;
     height: 70px;
   }
 }
@@ -207,16 +212,19 @@
 
   .text1 {
     font-size: 16px;
+    margin-left: 100px;
   }
 
   .text2 {
     position: relative;
     font-size: 13px;
+    margin-left: 20px;
   }
 
   .text3 {
     position: relative;
     font-size: 13px;
+    margin-left: 30px;
   }
 
   .rectangle {
@@ -230,11 +238,11 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 30px;
   }
 
   .registration {
-    width: 240px;
+    width: 200px;
     height: 70px;
     position: relative;
     display: flex;
@@ -243,8 +251,12 @@
   }
 
   .form_registration {
-    width: 240px;
+    width: 200px;
     height: 70px;
+  }
+
+  .form_email {
+    width: 200px;
   }
 }
 
@@ -301,6 +313,46 @@
 
   .arrow2 {
     display: none;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+  .form_email {
+    width: 90px;
+    height: 20px;
+    font-size: 9px;
+    text-indent: 10px;
+  }
+
+  .form_registration {
+    width: 90px;
+    height: 20px;
+    font-size: 9px;
+    text-indent: 10px;
+  }
+
+  .registration button {
+    width: 90px;
+    height: 30px;
+    font-size: 9px;
+  }
+
+  .text1 {
+    left: -60px;
+  }
+
+  .text2 {
+    font-size: 8.5px;
+  }
+
+  .text3 {
+    font-size: 8.5px;
+  }
+
+  .rectangle {
+    width: 50px;
+    margin-left: -30px;
   }
 }
 
