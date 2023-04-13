@@ -9,6 +9,8 @@ function Picture() {
   const [pictures, setPictures] = useState([]);
   const [load, setLoad] = useState(true);
 
+  const [heartAnimation, setHeartAnimation] = useState(false);
+
   useEffect(() => {
     async function fetchPictures() {
       const response = await fetch(
@@ -55,26 +57,27 @@ function Picture() {
 
       if (responce.ok) {
         // update votes
+        setHeartAnimation(true);
+        setTimeout(() => setHeartAnimation(false), 1000);
 
         const updatedPicture = await responce.json();
 
-        let index = pictures.findIndex(x => x.id === pictureId);
+        let index = pictures.findIndex((x) => x.id === pictureId);
         let tempPictures = [...pictures];
-        let tempPicture = { ...tempPictures[index] }
+        let tempPicture = { ...tempPictures[index] };
         tempPicture.count_vote++;
         tempPictures[index] = tempPicture;
 
+        let previousIndex = pictures.findIndex(
+          (x) => x.id === updatedPicture.previousPicture
+        );
 
-        let previousIndex = pictures.findIndex(x => x.id === updatedPicture.previousPicture)
-
-        let tempPreviousPicture = { ...tempPictures[previousIndex] }
+        let tempPreviousPicture = { ...tempPictures[previousIndex] };
         tempPreviousPicture.count_vote--;
         tempPictures[previousIndex] = tempPreviousPicture;
 
-
-
         updatePictureVotes(pictureId, updatedPicture.count_vote);
-        setPictures( tempPictures );
+        setPictures(tempPictures);
         toast.success("Ви успішно проголосували");
       }
       if (!responce.ok) {
@@ -120,7 +123,11 @@ function Picture() {
                 <div className="face back">
                   <div className="buttondiv">
                     <div className="heart">
-                      <img src={heart} alt="heart" />
+                      <img
+                        src={heart}
+                        alt="heart"
+                        className={heartAnimation ? "heart-animation" : ""}
+                      />
                       <span>{picture.count_vote}</span>
                     </div>
                     <div className="text-back">

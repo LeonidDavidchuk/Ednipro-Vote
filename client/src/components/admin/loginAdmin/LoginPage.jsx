@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "../loginAdmin/LoginPage.css";
 
 function LoginPage({ setIsAuthenticated }) {
   const [password, setPassword] = useState("");
@@ -35,8 +36,8 @@ function LoginPage({ setIsAuthenticated }) {
   };
 
   return (
-    <div className="App">
-      <h1>Вход админа</h1>
+    <div className="h1">
+      <h1>АДМИН - ПАНЕЛЬ</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="password">Пароль:</label>
         <input
@@ -46,7 +47,7 @@ function LoginPage({ setIsAuthenticated }) {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Войти в админ панель</button>
+        <button type="submit">Войти</button>
       </form>
       {message && <p>{message}</p>}
     </div>
