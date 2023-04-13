@@ -60,9 +60,18 @@ function AdminPage() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("isAuthenticated");
+    window.location.href = "/login";
+  };
+
   return (
     <div>
       <h1>Добавить картинку</h1>
+      <button onClick={handleLogout} className="logout">
+        Выйти
+      </button>
       <form className="pictures" onSubmit={handleSubmit}>
         <label htmlFor="name">Имя ученика:</label>
         <input
@@ -97,6 +106,7 @@ function AdminPage() {
       <br />
       <br />
       <br />
+
       <h2>Удалить картинку</h2>
       <ul className="delete">
         {pictures.map((picture) => (
@@ -106,11 +116,13 @@ function AdminPage() {
           </li>
         ))}
       </ul>
+
       <br />
       <br />
       <br />
       <br />
       <br />
+
       {message && <p>{message}</p>}
     </div>
   );

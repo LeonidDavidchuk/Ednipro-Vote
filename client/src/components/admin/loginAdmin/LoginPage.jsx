@@ -22,6 +22,7 @@ function LoginPage({ setIsAuthenticated }) {
       setMessage(response.data.message);
 
       if (response.status === 200) {
+        localStorage.setItem("isAuthenticated", true);
         setIsAuthenticated(true);
         setMessage(response.message);
         navigate("/login/adminpage");
