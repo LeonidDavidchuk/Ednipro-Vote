@@ -14,7 +14,7 @@ export const Picture = sequelize.define("Picture", {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
+    unique: false,
   },
   school: {
     type: DataTypes.STRING,
