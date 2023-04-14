@@ -18,6 +18,7 @@
   flex-direction: column;
   align-items: baseline;
   width: 800px;
+  margin-left: -60px;
   justify-content: center;
 }
 
@@ -71,6 +72,7 @@ p.tight2 {
   height: 600px;
   position: relative;
   display: flex;
+  margin-left: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -348,6 +350,7 @@ p.tight2 {
 
   .left {
     width: 100%;
+    margin-top: -100px;
   }
 
   .right {

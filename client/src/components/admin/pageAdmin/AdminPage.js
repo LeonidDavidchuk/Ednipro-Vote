@@ -73,31 +73,43 @@ function AdminPage() {
         Выйти
       </button>
       <form className="pictures" onSubmit={handleSubmit}>
-        <label htmlFor="name">Имя ученика:</label>
+        <label className="d1" htmlFor="name">
+          Имя ученика:
+        </label>
         <input
+          className="d1"
           type="text"
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
-        <label htmlFor="url">URL:</label>
+        <label className="d1" htmlFor="url">
+          URL:
+        </label>
         <input
+          className="d1"
           type="url"
           id="url"
+          placeholder="http://localhost:3000/api/uploads/Название файла"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           required
         />
-        <label htmlFor="school">Школа:</label>
+        <label className="d1" htmlFor="school">
+          Школа:
+        </label>
         <input
+          className="d1"
           type="text"
           id="school"
           value={school}
           onChange={(e) => setSchool(e.target.value)}
           required
         />
-        <button type="submit">Добавить картинку</button>
+        <button className="d2" type="submit">
+          Добавить картинку
+        </button>
       </form>
 
       <br />
@@ -112,7 +124,9 @@ function AdminPage() {
         {pictures.map((picture) => (
           <li key={picture.id}>
             {picture.name} {picture.url} {picture.school}
-            <button onClick={() => deletePicture(picture.id)}>Удалить</button>
+            <button className="d1" onClick={() => deletePicture(picture.id)}>
+              Удалить
+            </button>
           </li>
         ))}
       </ul>

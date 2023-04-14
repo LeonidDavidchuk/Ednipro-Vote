@@ -318,6 +318,10 @@
 
 /* Mobile L */
 @media (max-width: 425px) {
+  .text-container {
+    margin-top: 230px;
+  }
+
   .form_email {
     width: 90px;
     height: 20px;

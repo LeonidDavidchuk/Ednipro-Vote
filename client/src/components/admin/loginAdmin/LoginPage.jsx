@@ -39,16 +39,19 @@ function LoginPage({ setIsAuthenticated }) {
   return (
     <div className="h1">
       <h1>АДМИН - ПАНЕЛЬ</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="button-admin" onSubmit={handleSubmit}>
         <label htmlFor="password">Пароль:</label>
         <input
+          className="input"
           type="password"
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Войти</button>
+        <button className="buttonauth" type="submit">
+          Войти
+        </button>
       </form>
       {message && <p>{message}</p>}
     </div>

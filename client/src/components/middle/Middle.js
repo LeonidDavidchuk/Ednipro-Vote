@@ -44,7 +44,7 @@ function Middle() {
                 <span className="blue-circle-span"> 3</span>
                 <div className="blue-circle3"></div>
               </div>
-              <div>Вибір переможця та передача подарунку</div>
+              <div className="vibir">Вибір переможця та передача подарунку</div>
               <span>
                 <strong>1 день</strong>
               </span>

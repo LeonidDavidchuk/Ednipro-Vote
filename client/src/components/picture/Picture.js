@@ -40,7 +40,7 @@ function Picture() {
       const token = localStorage.getItem("token");
 
       if (!token) {
-        toast.error("Будь ласка зареєєструйтеся на сайті, щоб проголосувати");
+        toast.error("Будь ласка зареєструйтеся на сайті, щоб проголосувати");
         return;
       }
 

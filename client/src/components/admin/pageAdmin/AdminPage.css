@@ -23,8 +23,18 @@ h2 {
 
 .logout {
   margin-left: 90%;
+  font-size: 30px;
 }
 
-* {
-  font-size: 39px;
+body {
+  font-size: 20px;
+}
+
+.d1 {
+  font-size: 30px;
+  width: 700px;
+}
+
+.d2 {
+  font-size: 30px;
 }

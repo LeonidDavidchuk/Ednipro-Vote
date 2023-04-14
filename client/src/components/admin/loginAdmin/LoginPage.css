@@ -1,1 +1,23 @@
+body {
+  font-size: 30px;
+}
 
+form {
+  height: 300px;
+}
+
+.h1 {
+  font-size: 30px;
+}
+
+.input {
+  width: 150px;
+  height: 20px;
+  font-size: 30px;
+}
+
+.buttonauth {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+}

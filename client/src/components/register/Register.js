@@ -9,6 +9,14 @@ import "react-toastify/dist/ReactToastify.css";
 function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [isRegistered, setIsRegistered] = useState(false);
+
+  React.useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsRegistered(true);
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,6 +37,8 @@ function Register() {
 
       if (responce.ok) {
         console.log("User registered: ", data.user.token);
+
+        setIsRegistered(true);
 
         // Clean forms
         setName("");
@@ -69,33 +79,35 @@ function Register() {
         </span>
         <img className="arrow2" src={arrow2} alt="arrow2" />
 
-        <div className="Button-and-form">
-          <Form.Group>
-            <Form.Control
-              className="form_email"
-              type="text"
-              placeholder="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
+        {!isRegistered && (
+          <div className="Button-and-form">
+            <Form.Group>
+              <Form.Control
+                className="form_email"
+                type="text"
+                placeholder="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              className="form_registration"
-              type="text"
-              placeholder="Ім'я"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </Form.Group>
+            <Form.Group>
+              <Form.Control
+                className="form_registration"
+                type="text"
+                placeholder="Ім'я"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
 
-          <div className="registration">
-            <button type="submit" onClick={handleSubmit}>
-              Зареєструватися
-            </button>
+            <div className="registration">
+              <button type="submit" onClick={handleSubmit}>
+                Зареєструватися
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
